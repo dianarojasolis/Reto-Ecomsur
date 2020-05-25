@@ -9,13 +9,12 @@ const peopleData = () => {
     xhttp.onreadystatechange = function () {
       if (this.readyState === 4 && this.status === 200) {
         const data = JSON.parse(this.responseText);
-        // mostrando el array en la consola
-        console.log(data.results);
+        
   
         const container = document.getElementById('container');
         container.innerHTML = '';
   
-        // accediendo a la información elegida de la persona
+       
         for (const person of data.results) {
           container.innerHTML
                   += `<div class='cards'>
