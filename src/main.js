@@ -20,10 +20,9 @@ const peopleData = () => {
           container.innerHTML
                   += `<div class='cards'>
                       <img src=${person.picture.large} class="person-img">
-                      <div class='people-data'>
-                      <p>Usurname: ${person.login.usurname}</p>
+                      <div class='person-data'>
                           <p>Nombre: ${person.name.title} ${person.name.first} ${person.name.last}</p>
-                          <p>País: ${person.country}</p>
+                          <p>Sexo: ${person.gender}</p>
                           <p>Telefono: ${person.phone}</p>
                           <p>Email: ${person.email}</p>
                   </div>`;
